@@ -1,0 +1,8 @@
+10000011
+SensTemp1,10000000,temperatura
+SensHumidity1,10000001,umidità
+SensLight1,10000002,luminosità
+SensTemp2,10000003,temperatura
+t3,10000004,temperatura
+h2,10000007,umidità
+l2,10000008,luminosità
