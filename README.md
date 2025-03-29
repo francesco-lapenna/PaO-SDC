@@ -1,6 +1,7 @@
 # Progetto Programmazione ad Oggetti
 Progetto svolto per il corso "Programmazione ad oggetti" del corso di Laurea in Informatica all'Università degli Studi di Padova.
 Anno Accademico 2023/24.
+Progetto sviluppato in C++ e Qt con tema: applicazione di gestione di un sistema di sensori.
 
 ## Valutazione del Professore
 Feedback Progetto di Programmazione ad Oggetti
