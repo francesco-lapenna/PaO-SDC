@@ -1,6 +1,6 @@
 # Progetto Programmazione ad Oggetti
 Progetto svolto per il corso "Programmazione ad oggetti" del corso di Laurea in Informatica all'Università degli Studi di Padova.
-A.A. 2023/24
+Anno Accademico 2023/24.
 
 ## Valutazione del Professore
 Feedback Progetto di Programmazione ad Oggetti
