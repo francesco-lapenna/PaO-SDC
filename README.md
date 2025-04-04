@@ -50,6 +50,7 @@ Nessuno.
 ## Istruzioni per la compilazione
 Compilare con:
 ```bash
+sudo apt install qmake6 make qtbase5-dev qtchooser libqt5charts5-dev
 qmake
 make
 ```
