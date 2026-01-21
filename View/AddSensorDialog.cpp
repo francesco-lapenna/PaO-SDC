@@ -5,12 +5,13 @@ AddSensorDialog::AddSensorDialog(Modello *_pm) : pm(_pm) {
   setLayout(mainVLayout);
   
   // LINE EDIT
-  mainVLayout->addWidget(new QLabel("Insert sensor name (max 15 chars):"));
+  mainVLayout->addWidget(new QLabel("Insert sensor name (max 12 chars):"));
   
   nameLineEdit = new QLineEdit;
   nameLineEdit->setFixedWidth(170);
   //nameLineEdit->setPlaceholderText("name...");
-  nameLineEdit->setInputMask("Nnnnnnnnnnnnnnn");  // per evitare troppi controlli setto una mask
+  nameLineEdit->setMaxLength(12);
+  // nameLineEdit->setInputMask("Nnnnnnnnnnnnnnn");  // per evitare troppi controlli setto una mask
   mainVLayout->addWidget(nameLineEdit);
   
   // COMBO BOX
