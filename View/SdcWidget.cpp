@@ -80,8 +80,7 @@ SdcWidget::SdcWidget(MainWindow *_pmw, Modello *_pm, QWidget *parent) : QWidget(
     "QPushButton {"
     "  background-color: #27ae60;"  // green background
     "  color: white;"               // white text
-    "  border-radius: 5px;"         // rounded corners
-    "  padding: 5px 10px;"          // padding
+    "  font-weight: bold;"          // make text bold
     "}"
     "QPushButton:hover {"
     "  background-color: #219150;"  // darker green on hover
@@ -148,18 +147,29 @@ void SdcWidget::initSensorFrame() {
     deleteButton = new QPushButton("Delete");
     simulationButton = new QPushButton("Simulation");
 
+    modifyButton->setStyleSheet(
+      "QPushButton {"
+      "  color: white;"               // white text
+      "  font-weight: bold;"          // make text bold
+      "}"
+    );
     deleteButton->setStyleSheet(
       "QPushButton {"
       "  background-color: #e74c3c;"  // red background
       "  color: white;"               // white text
-      "  border-radius: 5px;"         // rounded corners
-      "  padding: 5px 10px;"          // padding
+      "  font-weight: bold;"          // make text bold
       "}"
       "QPushButton:hover {"
       "  background-color: #c0392b;"  // darker red on hover
       "}"
       "QPushButton:pressed {"
       "  background-color: #992d22;"  // even darker when clicked
+      "}"
+    );
+    simulationButton->setStyleSheet(
+      "QPushButton {"
+      "  color: white;"               // white text
+      "  font-weight: bold;"          // make text bold
       "}"
     );
     
