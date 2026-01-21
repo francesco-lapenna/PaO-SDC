@@ -47,6 +47,23 @@ SdcWidget::SdcWidget(MainWindow *_pmw, Modello *_pm, QWidget *parent) : QWidget(
   sensorNameLineEdit = new QLineEdit();
   sensorNameLineEdit->setFixedWidth(170);
   sensorNameLineEdit->setPlaceholderText("Insert sensor name:");
+  QPalette p = qApp->palette();
+  sensorNameLineEdit->setStyleSheet(QString(
+    "QLineEdit {"
+    "  border: 1px solid %1;"
+    "  border-radius: 6px;"
+    "}"
+    "QLineEdit:focus {"
+    "  border: 1px solid %2;"
+    "}"
+    "QLineEdit:hover {"
+    "  border: 1px solid %2;"
+    "}"
+  ).arg(
+    p.color(QPalette::Midlight).name(),   // visible unfocused border
+    p.color(QPalette::Highlight).name()   // system accent
+  ));
+
   filtersVLayout->addWidget(sensorNameLineEdit);
   filtersVLayout->addWidget(new QLabel("<b>Filters:</b>"));
   
