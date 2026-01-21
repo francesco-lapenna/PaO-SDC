@@ -4,6 +4,7 @@
 
 TEMPLATE = app
 TARGET = SDC
+DESTDIR = ..
 INCLUDEPATH += .
 QT += widgets charts
 

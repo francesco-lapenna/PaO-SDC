@@ -51,6 +51,17 @@ Nessuno.
 Compilare con:
 ```bash
 sudo apt install qmake6 make qtbase5-dev qtchooser libqt5charts5-dev
-qmake
+
+cd build
+qmake6 ..
+make
+```
+
+Clean rebuild
+```bash
+rm -rf build
+mkdir build
+cd build
+qmake6 ..
 make
 ```
