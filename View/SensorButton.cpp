@@ -8,9 +8,9 @@ SensorButton::SensorButton(string _nome, int _id, string _tipo,
   tipo = _tipo;
   ps = _ps;
   par = _par;
-  string text = "name: " + nome+
-                "\ntype: " + tipo+
-                "\nid: " + std::to_string(id);
+  string text = "Name: " + nome+
+                "\nType: " + tipo+
+                "\nID: " + std::to_string(id);
   this->setText(QString::fromStdString(text));
   this->setFixedSize(180, 100);
 }

@@ -74,8 +74,24 @@ SdcWidget::SdcWidget(MainWindow *_pmw, Modello *_pm, QWidget *parent) : QWidget(
   
   sensorsScrollArea->setWidget(scrollWidget);
   
-  addNewSensorButton = new QPushButton("Add");
-  addNewSensorButton->setFixedSize(50, 50);
+  addNewSensorButton = new QPushButton("Add +");
+
+  addNewSensorButton->setStyleSheet(
+    "QPushButton {"
+    "  background-color: #27ae60;"  // green background
+    "  color: white;"               // white text
+    "  border-radius: 5px;"         // rounded corners
+    "  padding: 5px 10px;"          // padding
+    "}"
+    "QPushButton:hover {"
+    "  background-color: #219150;"  // darker green on hover
+    "}"
+    "QPushButton:pressed {"
+    "  background-color: #1a6f3c;"  // even darker when clicked
+    "}"
+  );
+
+  addNewSensorButton->setFixedSize(75, 50);
   searchHLayout->addWidget(addNewSensorButton);
   
   // SENSOR FRAME
@@ -104,11 +120,11 @@ void SdcWidget::initSensorFrame() {
     QString id = QString::fromStdString(std::to_string(activeSensor->get_id()));
     QString tipo = QString::fromStdString(activeSensor->get_tipo());
     
-    activeSensorNameLabel = new QLabel("Nome: " + nome);
+    activeSensorNameLabel = new QLabel("Name: " + nome);
     
     infoGLayout->addWidget( activeSensorNameLabel , 0, 0, 1, 1);
     infoGLayout->addWidget( new QLabel("ID: " + id) , 0, 1, 1, 1);
-    infoGLayout->addWidget( new QLabel("Tipo: " + tipo) , 0, 2, 1, 1);
+    infoGLayout->addWidget( new QLabel("Type: " + tipo) , 0, 2, 1, 1);
     
     QSpacerItem *spcr = new QSpacerItem(100, 25, QSizePolicy::Expanding);
     infoGLayout->addItem(spcr, 0, 3, 1, 1);
@@ -128,9 +144,24 @@ void SdcWidget::initSensorFrame() {
     iconLabel->setPixmap(pixmap);
     
     // BUTTONS
-    modifyButton = new QPushButton("Modify");
+    modifyButton = new QPushButton("Edit");
     deleteButton = new QPushButton("Delete");
     simulationButton = new QPushButton("Simulation");
+
+    deleteButton->setStyleSheet(
+      "QPushButton {"
+      "  background-color: #e74c3c;"  // red background
+      "  color: white;"               // white text
+      "  border-radius: 5px;"         // rounded corners
+      "  padding: 5px 10px;"          // padding
+      "}"
+      "QPushButton:hover {"
+      "  background-color: #c0392b;"  // darker red on hover
+      "}"
+      "QPushButton:pressed {"
+      "  background-color: #992d22;"  // even darker when clicked
+      "}"
+    );
     
     modifyButton->setFixedSize(180, 25);
     deleteButton->setFixedSize(180, 25);
