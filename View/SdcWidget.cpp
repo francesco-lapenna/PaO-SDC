@@ -122,8 +122,8 @@ void SdcWidget::initSensorFrame() {
     activeSensorNameLabel = new QLabel("<b>Name: </b>" + nome);
     
     infoGLayout->addWidget( activeSensorNameLabel , 0, 0, 1, 1);
-    infoGLayout->addWidget( new QLabel("<b>ID: </b>" + id) , 0, 1, 1, 1);
-    infoGLayout->addWidget( new QLabel("<b>Type: </b>" + tipo) , 0, 2, 1, 1);
+    infoGLayout->addWidget( new QLabel("<b>Type: </b>" + tipo) , 0, 1, 1, 1);
+    infoGLayout->addWidget( new QLabel("<b>ID: </b>" + id) , 0, 2, 1, 1);
     
     QSpacerItem *spcr = new QSpacerItem(100, 25, QSizePolicy::Expanding);
     infoGLayout->addItem(spcr, 0, 3, 1, 1);
@@ -178,8 +178,8 @@ void SdcWidget::initSensorFrame() {
     simulationButton->setFixedSize(180, 25);
     
     infoGLayout->addWidget(modifyButton, 1, 0, 1, 1);
-    infoGLayout->addWidget(deleteButton, 1, 1, 1, 1);
-    infoGLayout->addWidget(simulationButton, 1, 2, 1, 1);
+    infoGLayout->addWidget(simulationButton, 1, 1, 1, 1);
+    infoGLayout->addWidget(deleteButton, 1, 2, 1, 1);
     
     // connections
     connect(modifyButton, &QPushButton::clicked,
