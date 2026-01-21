@@ -42,8 +42,8 @@ void ChartVisitor::visitSensoreTemperatura(SensoreTemperatura* e) {
   // aggiungo info specifiche del sensore
   //delete psdcw->maxLabel;
   //delete psdcw->minLabel;
-  psdcw->maxLabel->setText("max: " + QString::number(massima));
-  psdcw->minLabel->setText("min: " + QString::number(minima));
+  psdcw->maxLabel->setText("<b>Max value: </b>" + QString::number(massima));
+  psdcw->minLabel->setText("<b>Min value: </b>" + QString::number(minima));
   
 }
 

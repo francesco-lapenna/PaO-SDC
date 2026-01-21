@@ -43,12 +43,12 @@ SdcWidget::SdcWidget(MainWindow *_pmw, Modello *_pm, QWidget *parent) : QWidget(
   searchFrame->setFixedHeight(180);
   filtersVLayout = new QVBoxLayout;
   searchHLayout->addLayout(filtersVLayout);
-  filtersVLayout->addWidget(new QLabel("Search:"));
+  filtersVLayout->addWidget(new QLabel("<b>Search:</b>"));
   sensorNameLineEdit = new QLineEdit();
   sensorNameLineEdit->setFixedWidth(170);
   sensorNameLineEdit->setPlaceholderText("Insert sensor name:");
   filtersVLayout->addWidget(sensorNameLineEdit);
-  filtersVLayout->addWidget(new QLabel("Filters:"));
+  filtersVLayout->addWidget(new QLabel("<b>Filters:</b>"));
   
   lightCheckBox = new QCheckBox("light");
   temperatureCheckBox = new QCheckBox("temperature");
@@ -119,11 +119,11 @@ void SdcWidget::initSensorFrame() {
     QString id = QString::fromStdString(std::to_string(activeSensor->get_id()));
     QString tipo = QString::fromStdString(activeSensor->get_tipo());
     
-    activeSensorNameLabel = new QLabel("Name: " + nome);
+    activeSensorNameLabel = new QLabel("<b>Name: </b>" + nome);
     
     infoGLayout->addWidget( activeSensorNameLabel , 0, 0, 1, 1);
-    infoGLayout->addWidget( new QLabel("ID: " + id) , 0, 1, 1, 1);
-    infoGLayout->addWidget( new QLabel("Type: " + tipo) , 0, 2, 1, 1);
+    infoGLayout->addWidget( new QLabel("<b>ID: </b>" + id) , 0, 1, 1, 1);
+    infoGLayout->addWidget( new QLabel("<b>Type: </b>" + tipo) , 0, 2, 1, 1);
     
     QSpacerItem *spcr = new QSpacerItem(100, 25, QSizePolicy::Expanding);
     infoGLayout->addItem(spcr, 0, 3, 1, 1);
