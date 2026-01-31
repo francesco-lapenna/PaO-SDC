@@ -75,9 +75,9 @@ void Modello::inizializza_modello() {
     getline(ss, _id, ',');
     getline(ss, _tipo, ',');
     // creo il sensore (get_tipo inevitabile)
-    if (_tipo == "temperatura") { aggiungi_sensore_temperatura(_nome, stoi(_id)); }
-    else if (_tipo == "umidità") { aggiungi_sensore_umidita(_nome, stoi(_id)); }
-    else if (_tipo == "luminosità") { aggiungi_sensore_luminosita(_nome, stoi(_id)); }
+    if (_tipo == "temperature") { aggiungi_sensore_temperatura(_nome, stoi(_id)); }
+    else if (_tipo == "humidity") { aggiungi_sensore_umidita(_nome, stoi(_id)); }
+    else if (_tipo == "light") { aggiungi_sensore_luminosita(_nome, stoi(_id)); }
     // passo alla riga successiva
     file >> line;
   }

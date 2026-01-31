@@ -1,0 +1,11 @@
+10000010
+Garage,10000009,light
+Bathroom2,10000008,humidity
+Batroom1,10000007,humidity
+Hallway,10000006,light
+Garden,10000005,light
+BeedroomKids,10000004,temperature
+Bedroom,10000003,temperature
+LivingRoom,10000002,temperature
+Kitchen,10000001,humidity
+Kitchen,10000000,temperature

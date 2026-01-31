@@ -1,5 +1,5 @@
 10000014
-t2,10000012,temperatura
-t1,10000000,temperatura
-u1,10000001,umidità
-l1,10000002,luminosità
+t2,10000012,temperature
+t1,10000000,temperature
+u1,10000001,humidity
+l1,10000002,light

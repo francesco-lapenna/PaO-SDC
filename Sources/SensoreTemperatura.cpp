@@ -24,7 +24,7 @@ int SensoreTemperatura::prendi_misurazione(int x_prec, int y_prec) const {
 // protected: -------------------------------------------------------------------------- //
 
 // public: ----------------------------------------------------------------------------- //
-SensoreTemperatura::SensoreTemperatura(string _nome, int _id) : SensoreAstratta(_nome, _id, "temperatura") {}
+SensoreTemperatura::SensoreTemperatura(string _nome, int _id) : SensoreAstratta(_nome, _id, "temperature") {}
 
 // VISITOR
 void SensoreTemperatura::accept(VisitorAbstract* visitor) {

@@ -42,7 +42,7 @@ int SensoreLuminosita::prendi_misurazione(int x_prec, int y_prec) const {
 // protected: -------------------------------------------------------------------------- //
 
 // public: ----------------------------------------------------------------------------- //
-SensoreLuminosita::SensoreLuminosita(string _nome, int _id) : SensoreAstratta(_nome, _id, "luminosità") {}
+SensoreLuminosita::SensoreLuminosita(string _nome, int _id) : SensoreAstratta(_nome, _id, "light") {}
 
 // VISITOR
 void SensoreLuminosita::accept(VisitorAbstract* visitor) {

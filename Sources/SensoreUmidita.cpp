@@ -9,7 +9,7 @@ using std::string;
 
 // private: ---------------------------------------------------------------------------- //
 
-// implementazione specifica di prendi_misurazione di un sensore che misura l'umidità
+// implementazione specifica di prendi_misurazione di un sensore che misura l'humidity
 int SensoreUmidita::prendi_misurazione(int x_prec, int y_prec) const {
   int aux;
   if (x_prec == 0) { aux = 50; }  // se è la prima misurazione gli do il valore di 50 (%)
@@ -24,7 +24,7 @@ int SensoreUmidita::prendi_misurazione(int x_prec, int y_prec) const {
 // protected: -------------------------------------------------------------------------- //
 
 // public: ----------------------------------------------------------------------------- //
-SensoreUmidita::SensoreUmidita(string _nome, int _id) : SensoreAstratta(_nome, _id, "umidità") {}
+SensoreUmidita::SensoreUmidita(string _nome, int _id) : SensoreAstratta(_nome, _id, "humidity") {}
 
 // VISITOR
 void SensoreUmidita::accept(VisitorAbstract* visitor) {

@@ -20,9 +20,9 @@ AddSensorDialog::AddSensorDialog(Modello *_pm) : pm(_pm) {
   sensorTypeComboBox = new QComboBox;
   mainVLayout->addWidget(sensorTypeComboBox);
 
-  sensorTypeComboBox->addItem("Temperatura");
-  sensorTypeComboBox->addItem("Umidità");
-  sensorTypeComboBox->addItem("Luminosità");
+  sensorTypeComboBox->addItem("Temperature");
+  sensorTypeComboBox->addItem("Humidity");
+  sensorTypeComboBox->addItem("Light");
   
   // BUTTON
   createButton = new QPushButton("create");
@@ -53,13 +53,13 @@ void AddSensorDialog::on_createButton() {
   // creo il sensore
   string name = (nameLineEdit->text()).toStdString();
   
-  if (sensorTypeComboBox->currentText() == "Temperatura") {
+  if (sensorTypeComboBox->currentText() == "Temperature") {
     pm->aggiungi_sensore_temperatura(name);
   }
-  else if (sensorTypeComboBox->currentText() == "Umidità") {
+  else if (sensorTypeComboBox->currentText() == "Humidity") {
     pm->aggiungi_sensore_umidita(name);
   }
-  else if (sensorTypeComboBox->currentText() == "Luminosità") {
+  else if (sensorTypeComboBox->currentText() == "Light") {
     pm->aggiungi_sensore_luminosita(name);
   }
   

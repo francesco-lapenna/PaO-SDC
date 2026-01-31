@@ -69,7 +69,7 @@ SdcWidget::SdcWidget(MainWindow *_pmw, Modello *_pm, QWidget *parent) : QWidget(
   
   lightCheckBox = new QCheckBox("light");
   temperatureCheckBox = new QCheckBox("temperature");
-  umidityCheckBox = new QCheckBox("umidity");
+  umidityCheckBox = new QCheckBox("humidity");
   lightCheckBox->setChecked(true);
   temperatureCheckBox->setChecked(true);
   umidityCheckBox->setChecked(true);
