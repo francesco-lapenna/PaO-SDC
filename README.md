@@ -4,6 +4,9 @@ Anno Accademico 2023/24.
 
 Progetto sviluppato in C++ e Qt con tema: applicazione di gestione di un sistema di sensori.
 
+> [!NOTE]
+> Apportati alcuni miglioramenti post-corso nel branch development
+
 ## Valutazione del Professore
 Feedback Progetto di Programmazione ad Oggetti
 Studente: Lapenna Francesco
